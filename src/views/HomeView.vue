@@ -149,3 +149,6 @@
 
   </div>
 </template>
+
+
+<style src="./../assets/css/homePageStyles.css"></style>
