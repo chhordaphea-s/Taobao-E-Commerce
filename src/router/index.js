@@ -22,6 +22,34 @@ const router = createRouter({
       name: "product",
       component: () => import("../views/Products.vue"),
     },
+    {
+      path: "/cart",
+      name: "cart",
+      component: () => import("../views/Cart.vue"),
+    },
+    {
+      path: "/customerservice",
+      name: "customerservice",
+      component: () => import("../views/CustomerService.vue"),
+    },
+    {
+      path: "/shippinginfo",
+      name: "shippinginfo",
+      component: () => import("../views/ShippingInfo.vue"),
+    },
+    {
+      path: "/paymentmethod",
+      name: "paymentmethod",
+      component: () => import("../views/PaymentMethod.vue"),
+    },
+    {
+      path: "/success",
+      name: "success",
+      component: () => import("../views/Success.vue"),
+    },
+
+
+
   ],
 });
 

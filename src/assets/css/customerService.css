@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+.customerService {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:  flex-start;
+
+    margin-top: 0;
+
+}
+
+.routes-to-payment {
+    font-family: 'Jua', sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+    display: flex;
+    padding-left: 40px;
+    padding-top: 40px;
+
+}
+.routes-to-payment .router {
+    /* text-decoration: underline; */
+    margin-right: 10px;
+    margin-left: 10px;
+    /* color: rgb(173, 173, 173); */
+}
+.routes-to-payment .on{
+    color: #D06325;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.Leftside {
+    width: 63%;
+    height: auto;
+    margin-right: 50px;
+}
+.Rightside {
+    width: 35%;
+    height: auto;
+    padding: 20px;
+    padding-right: 50px;
+}
+
+.Leftside .service-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 97.5%;
+}
+.Leftside .service-container .service-style{
+    color: #D06325;
+    font-family: Jua;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+}
+.Leftside .service-container .go-login{
+    display: flex;
+    columns: 20;
+    gap: 10px;
+    margin-top: 15px;
+}
+.Leftside .service-container .go-login .question{
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    color:  #959292;
+}
+.Leftside .service-container .go-login .login{
+    color: #D06325;
+    font-family: Jua;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    text-decoration-line: underline;
+}
+
+/* Email input  */
+
+.Leftside .email {
+    width: 98%;
+    height: 45px;
+    flex-shrink: 0;
+    border: 2px solid #959292;
+    background: #FFF;
+    font-size: 22px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    /* border-bottom-left-radius: 10px; */
+}
+
+/* shipping address */
+
+.Leftside .shipping-style {
+    color: #D06325;
+    font-family: Jua;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.Leftside .inputname-container {
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.Leftside .inputname-container .name{
+    width: 50.5%;
+    height: 45px;
+    flex-shrink: 0;
+    border: 2px solid #959292;
+    background: #FFF;
+    font-size: 22px;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.Leftside .company {
+    width: 98%;
+    height: 45px;
+    flex-shrink: 0;
+    border: 2px solid #959292;
+    background: #FFF;
+    font-size: 22px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+
+.Leftside .inputaddress-container {
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+.Leftside .inputaddress-container .address {
+    width: 70%;
+    height: 45px;
+    flex-shrink: 0;
+    border: 2px solid #959292;
+    background: #FFF;
+    font-size: 22px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.Leftside .inputaddress-container .apt {
+    width: 31%;
+    height: 45px;
+    flex-shrink: 0;
+    border: 2px solid #959292;
+    background: #FFF;
+    font-size: 22px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.Leftside .selectcountry-container{
+    width: 100%;
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.Leftside .selectcountry-container .country{
+    width: 33.3%;
+    height: 45px;
+    flex-shrink: 0;
+    border: 2px solid #959292;
+    background: #FFF;
+    font-size: 22px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.Leftside .selectcountry-container .country .option {
+    font-size: 22px;
+    color: #959292;
+
+}
+
+/* Button */
+
+.Leftside .buttonReturnContinue-container {
+    width: 96%;
+    height: 45px;
+    border-radius: 15px;
+    border: 0px solid #000;
+    background: #FFD7CB;
+    margin-left: 40px;
+    margin-top: 80px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.Leftside .buttonReturnContinue-container .to-return {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+.Leftside .buttonReturnContinue-container .to-return .return {
+    font-family: Jua;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+.Leftside .buttonReturnContinue-container .continue { 
+    width: 40%;
+    height: 45px;   
+    color: #FFF;
+    font-family: Jua;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+
+    border-radius: 15px;
+    background: #D06325;
+}
+
+
+
+/* Right side  */
+
+.Rightside .rightSideContent {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: 0px solid #000;
+    background: #FFD7CB;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    margin-top: 80px;
+    margin-right: auto;
+}
+
+
+.Rightside .summaryItem {
+    display: flex;
+    justify-content: center;
+}
+.Rightside .summaryItem .sum {
+    font-family: Jua;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 500;
+}
+.Rightside .summaryItem .item{
+    font-family: Jua;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.Rightside .line{
+    width: 85%;
+    height: 0px;
+    border-color: #000;
+    margin-left: 31px;
+    margin-top: 20px;
+}
+
+/* Subtotal  */
+
+.Rightside .summary-subtotal-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+.Rightside .summary-subtotal-container .sum-sub{
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    display: inline;
+    
+}
+
+.Rightside .discount-container {
+    padding: 28px;
+}
+.Rightside .discount-container .discount-title{
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+}
+.Rightside .discount-container .action-on-code {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    
+    color: #959292;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+.Rightside .discount-container .action-on-code .input-code {
+    width: 70%;
+    height: 37px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding-left: 10px;
+}
+.Rightside .discount-container .action-on-code .btn-apply{
+    width: 27%;
+    height: 37px;
+    border: 3px solid #959292;
+    background: #FFF;
+}
+
+
+
+
+.Rightside .total-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+.Rightside .total-container .total {
+    font-family: Jua;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    display: inline;
+}

@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+.paymentMethod {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:  flex-start;
+
+    margin-top: 0;
+
+}
+.Leftside {
+    width: 63%;
+    height: auto;
+    margin-right: 50px;
+}
+.Rightside {
+    width: 35%;
+    height: auto;
+    padding: 20px;
+    padding-right: 50px;
+}
+
+/* Thank you */
+
+.Leftside .thankyou-container{
+    margin-top: 80px;
+    padding-left: 50px;
+    display: flex;
+    columns: 10;
+    gap: 20px;
+}
+.Leftside .thankyou-container .order-text{
+   
+
+}
+.Leftside .thankyou-container .order-text .order-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.Leftside .thankyou-container .order-text .order-container .order{
+    color: #000;
+    font-family: Jua;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.Leftside .thankyou-container .order-text .thankyou-text {
+    color: #000;
+    font-family: Jua;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.Leftside .confirm-container {
+    background: #FFD7CB;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 53px;
+    margin-top: 50px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Leftside .confirm-container .confirm-text{
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.Leftside .customer-info {
+    color: #D06325;
+    font-family: Jua;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.Leftside .allInfo-container {
+    display: flex;
+    align-content: flex-start;
+}
+.Leftside .info-container {
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 45%;
+    /* background-color: #3672DC; */
+}
+.Leftside .info-container .header{
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+
+    margin-top: 30px;
+}
+.Leftside .info-container .subhead{
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.Leftside .info-container .address{
+    color: #3672DC;
+    font-family: Jua;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration-line: underline;
+    width: 80%;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Right side  */
+
+.Rightside .rightSideContent {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: 0px solid #000;
+    background: #FFD7CB;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    margin-top: 80px;
+    margin-right: auto;
+}
+
+
+.Rightside .summaryItem {
+    display: flex;
+    justify-content: center;
+}
+.Rightside .summaryItem .sum {
+    font-family: Jua;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 500;
+}
+.Rightside .summaryItem .item{
+    font-family: Jua;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.Rightside .line{
+    width: 85%;
+    height: 0px;
+    border-color: #000;
+    margin-left: 31px;
+    margin-top: 20px;
+}
+/* Subtotal  */
+
+.Rightside .summary-subtotal-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+.Rightside .summary-subtotal-container .sum-sub{
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    display: inline;
+    
+}
+
+.Rightside .discount-container {
+    padding: 28px;
+}
+.Rightside .discount-container .discount-title{
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+}
+.Rightside .discount-container .action-on-code {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    
+    color: #959292;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+.Rightside .discount-container .action-on-code .input-code {
+    width: 70%;
+    height: 37px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding-left: 10px;
+}
+.Rightside .discount-container .action-on-code .btn-apply{
+    width: 27%;
+    height: 37px;
+    border: 3px solid #959292;
+    background: #FFF;
+}
+
+
+
+
+.Rightside .total-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+.Rightside .total-container .total {
+    font-family: Jua;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    display: inline;
+}
