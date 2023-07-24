@@ -3,13 +3,23 @@ p {
     font-weight: 700;
 }
 .home {
-    display: block;
-    /* position: relative; */
+    /* display: block; */
+    position: relative;
     font-family: 'Jua', sans-serif;
 
     width: 100%;
-    display: block;
     /* background-color: blue; */
+}
+.home .img {
+    position: absolute;
+    top: -535px;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    /* margin-top: -22px; */
+    z-index: -1;
+    
 }
   
 .homeCover {
@@ -75,7 +85,9 @@ p {
 }
 
 .cover-background {
-    display: block;
+    
+
+    /* display: block;
     position: absolute;
     z-index: 0;
     top: 407px;
@@ -84,20 +96,33 @@ p {
     height: 252px;
     
 
-    background-color: #FFD7CB;
+    background-color: #FFD7CB; */
 }
 
 /* Product */
 
-.product-section {
-    display: block;
-    width: 100%;
-    margin-top: 67px; 
+.home .product-section {
+    
+    width: 90%;
+    margin: auto;
+    margin-top: 500px;
 
-    background-color: #FFD7CB;
+    height: max-content;
+    border-radius: 20px;
+    background: #ffffff;
+    padding: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 25px;
+    row-gap: 25px;
+
 }
 
-.product-title-container {
+.home .product-section .product-title-container {
+    /* margin-left: 20px;
     display: flex;
     background-color: white;
 
@@ -115,7 +140,7 @@ p {
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    border-radius: 41px;
+    border-radius: 41px; */
 }
 
 .product-title-container h1 {
@@ -123,37 +148,21 @@ p {
     margin: auto;
 }
 
-.product-display-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
 
-    margin: auto;
-    margin-top: 86px;
-    margin-bottom: 80px;
-
-    width: 90%;
-    height: 900px;
-
-    padding-left: 50px;
-    padding-right: 50px;
-
-    justify-content: space-between;
-}
-
-.product-cell {
+.home .product-section .product-cell {
     width: 281px;
-    height: 309px;
+    height: auto;
     /* background-color: #D9D9D9; */
     border-radius: 10px;
 
     transition: all .2s ease-in-out;
 }
 
-.product-cell:hover {
-    transform: scale(1.2);
+.home .product-section .product-cell:hover {
+    transform: scale(1.1);
 }
 
-.product-cell .productImage {
+.home .product-section .product-cell .productImage {
     width: 281px;
     height: 256px;
     margin: auto;
@@ -162,10 +171,10 @@ p {
     border-radius: 11.8983px;
 }
 
-.product-info {
+.home .product-section .product-info {
     width: 281px;
     height: 106px;
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
     border: 2px solid #D06325;
     border-radius: 11.8983px;
     
@@ -190,105 +199,6 @@ p {
 
 
 /* Footer */
-.footer {
-    /* position: relative; */
-    background-color: #FFD7CB;
-    height: 150px;
-    font-family: 'Inter', sans-serif;
-    width: 100%;
-
-    padding: 30px;
-    padding-left: 64px;
-    padding-right: 64px;
-
-    display: flex;
-    justify-content: space-between;
-
-    filter: drop-shadow(0px -10px 10px rgba(0, 0, 0, 0.3));
-}
-
-.sideName {
-    display: inline-block;
-    font-size: 40px;
-    font-family: 'Inter', sans-serif;
-    text-align: left;
-
-    font-weight: 700;
-    color: #D06325;
-
-  }
-
-.category-wrapper {
-    display: inline-block;
-
-    font-family: 'Jua', sans-serif;
-
-    margin-left: 50px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: auto;
-
-    font-size: x-large;
-    }
-
-.category-wrapper .category-separator {
-    margin-left: 15px;
-    margin-right: 15px;
-    color: #D06325;
-}
-.category-wrapper a {
-    color: black;
-}
-
-
-.creditCard-container {
-    /* margin-top: 15px; */
-}
-
-.creditCard-container img {
-    display: inline-block;
-    margin-right: 20px;
-
-}
-
-.rightSide {
-    align-self: center;
-}
-
-.rightSide p {
-    align-self: center;
-    font-weight: 400;
-    font-size: large;
-
-    margin-bottom: 10px;
-}
-
-.registernbtn {
-    color: #D06325;
-    font-size: large;
-
-    width: 140px;
-    height: 43px;
-
-    
-    background: #FFFFFF;
-    border: 1px solid #D06325;
-    border-radius: 10px;
-
-    margin-right: 20px;
-
-} 
-
-.loginbtn {
-    font-size: large;
-    color: white;
-
-    width: 140px;
-    height: 43px;
-
-    background: #D06325;
-    border-radius: 10px;
-}
 
 
 @media (min-width: 1024px) {

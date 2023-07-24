@@ -1,7 +1,10 @@
 <template>
   <div class="home">
-    <div class="homeCover">
-      <div class="cover-info">
+    
+    <img class="img" src="../assets/images/home/homeCover.png" alt="">
+
+    <!-- <div class="homeCover"> -->
+      <!-- <div class="cover-info">
         <h1>Exclusive membership service</h1>
         <p>Our North American Field Guides provide tips for identifying birds in all of the regions of the United States and Canada. Download any of our guides for free now!</p>
 
@@ -14,19 +17,14 @@
           Register to get red envelopes</button>
       </div>
 
-      <img src="./../assets/images/homecovercartoon.svg" alt="">
+      <img src="./../assets/images/homecovercartoon.svg" alt=""> -->
 
       
-    </div> 
-    <div class="cover-background"></div>
+    <!-- </div>  -->
+    <!-- <div class="cover-background"></div> -->
 
 
     <div class="product-section">
-      <div class="product-title-container">
-        <h1>You may also like</h1>
-      </div>
-
-      <div class="product-display-container">
 
         <div class="product-cell">
           <div class="productImage">
@@ -38,6 +36,78 @@
                 <p id="product-price">$ 1.7</p>
           </div>
         </div>
+
+        <div class="product-cell">
+          <div class="productImage">
+            <img src="./../assets/images/home_products/product1icon.svg" alt="">
+          </div>
+
+          <div class="product-info">
+              <p id="product-name">ins air cushion comb women's black massage</p>
+                <p id="product-price">$ 1.7</p>
+          </div>
+        </div>
+        <div class="product-cell">
+          <div class="productImage">
+            <img src="./../assets/images/home_products/product1icon.svg" alt="">
+          </div>
+
+          <div class="product-info">
+              <p id="product-name">ins air cushion comb women's black massage</p>
+                <p id="product-price">$ 1.7</p>
+          </div>
+        </div>
+        <div class="product-cell">
+          <div class="productImage">
+            <img src="./../assets/images/home_products/product1icon.svg" alt="">
+          </div>
+
+          <div class="product-info">
+              <p id="product-name">ins air cushion comb women's black massage</p>
+                <p id="product-price">$ 1.7</p>
+          </div>
+        </div>
+        <div class="product-cell">
+          <div class="productImage">
+            <img src="./../assets/images/home_products/product1icon.svg" alt="">
+          </div>
+
+          <div class="product-info">
+              <p id="product-name">ins air cushion comb women's black massage</p>
+                <p id="product-price">$ 1.7</p>
+          </div>
+        </div>
+        <div class="product-cell">
+          <div class="productImage">
+            <img src="./../assets/images/home_products/product1icon.svg" alt="">
+          </div>
+
+          <div class="product-info">
+              <p id="product-name">ins air cushion comb women's black massage</p>
+                <p id="product-price">$ 1.7</p>
+          </div>
+        </div>
+        <div class="product-cell">
+          <div class="productImage">
+            <img src="./../assets/images/home_products/product1icon.svg" alt="">
+          </div>
+
+          <div class="product-info">
+              <p id="product-name">ins air cushion comb women's black massage</p>
+                <p id="product-price">$ 1.7</p>
+          </div>
+        </div>
+        <div class="product-cell">
+          <div class="productImage">
+            <img src="./../assets/images/home_products/product1icon.svg" alt="">
+          </div>
+
+          <div class="product-info">
+              <p id="product-name">ins air cushion comb women's black massage</p>
+                <p id="product-price">$ 1.7</p>
+          </div>
+        </div>
+
         <div class="product-cell">
           <div class="productImage">
             <img src="./../assets/images/home_products/product2icon.svg" alt="">
@@ -111,43 +181,11 @@
         </div>
       </div>      
     </div>
-  </div>
 
 
 
 
   
-  <div class="footer">
-    <div>
-      <RouterLink class="logo-footer" to="/">
-        <h1 class="sideName">Taobao</h1>
-      </RouterLink>
-    
-      <div class="category-wrapper">
-          <RouterLink class="category" to="/about">Trending</RouterLink>
-          <a href="" class="category-separator">|</a>
-          <RouterLink class="category" to="/product">Products</RouterLink>
-          <a href="" class="category-separator">|</a>
-          <RouterLink class="category" to="/about">More</RouterLink>
-
-          <!-- <button @click="$emit('checkout')">Go to checkout</button> -->
-        </div>
-
-      <div class="creditCard-container">
-        <img src="./../assets/images/visaIcon.svg" alt="">
-        <img src="./../assets/images/mastercard.svg" alt="">
-        <img src="./../assets/images/card3icon.svg" alt="">
-      </div>
-
-    </div>
-
-    <div class="rightSide">
-      <p><p style="color: #D06325; display: inline;">Stay in touch!</p> Join our Newsletter.</p>
-      <button class="registernbtn">Register</button>
-      <button class="loginbtn">Login</button>
-    </div>
-
-  </div>
 </template>
 
 

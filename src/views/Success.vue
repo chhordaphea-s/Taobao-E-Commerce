@@ -32,6 +32,9 @@
                     <p class="subhead">Kenny Bostick</p>
                     <p class="address">12 Waldo Point Road Mishauken, NY 11200 United States</p>
                 </div>
+            </div>
+
+            <div class="allInfo-container">
                 <div class="info-container">
                     <p class="header">Shipping Method</p>
                     <p class="subhead">UPS Ground (Estimated ship time of 3-6 days)</p>
@@ -41,8 +44,9 @@
                     <img src="../assets/images/svg/visa.svg" alt="">
                     <p class="subhead">Ending in 3217 - $23.60</p>
                 </div>
-            
             </div>
+            
+            
 
         </div>
 
@@ -72,13 +76,13 @@
     
                 <hr class="line">
 
-                <div class="discount-container">
+                <!-- <div class="discount-container">
                     <p class="discount-title">Gift card or discount code</p>
                     <div class="action-on-code">
                         <input class="input-code" type="text">
                         <button class="btn-apply">Apply</button>
                     </div>
-                </div>
+                </div> -->
     
                 <div class="total-container">
                     <p class="total">Total </p>

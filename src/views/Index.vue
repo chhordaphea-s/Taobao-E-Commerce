@@ -4,7 +4,7 @@
       <nav>
         <RouterLink class="logo" to="/">
           <img src="./../assets/images/logo.png" alt="">
-          <h1>Taobao</h1>
+          <h1 class="sideNameNavigation">Taobao</h1>
         </RouterLink>
 
         
@@ -42,6 +42,41 @@
   </header>
 
   <RouterView />
+
+  <div class="footer">
+    <div>
+      <RouterLink class="logo-footer" to="/">
+        <h1 class="sideName">Taobao</h1>
+      </RouterLink>
+    
+      <div class="category-wrapper">
+          <RouterLink class="category" to="/about">Trending</RouterLink>
+          <a href="" class="category-separator">|</a>
+          <RouterLink class="category" to="/product">Products</RouterLink>
+          <a href="" class="category-separator">|</a>
+          <RouterLink class="category" to="/about">More</RouterLink>
+
+          <!-- <button @click="$emit('checkout')">Go to checkout</button> -->
+        </div>
+
+      <div class="creditCard-container">
+        <img src="./../assets/images/visaIcon.svg" alt="">
+        <img src="./../assets/images/mastercard.svg" alt="">
+        <img src="./../assets/images/card3icon.svg" alt="">
+      </div>
+
+    </div>
+
+    <div class="rightSide">
+      <p><p style="color: #D06325; display: inline;">Stay in touch!</p> Join our Newsletter.</p>
+      <div class="relative">
+        <input type="text" class="w-[460px] h-[45px] rounded-full text-stone-900 pl-[20px]" placeholder="Email">
+        <button class="absolute h-[45px] rounded-full w-[130px] text-white font-Jua bg-[#D06325] right-0">Subscribe</button>
+      </div>
+    </div>
+
+  </div>
+
 </template>
 
 <style>
@@ -64,13 +99,15 @@
     box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
   }
   
+.logo {
+  display: flex;
 
+}
   .logo img {
-    margin-top: -35px;
     display: inline-block;
   }
 
-  .logo h1 {
+  .logo .sideNameNavigation {
     display: inline-block;
     font-size: 40px;
     font-family: 'Inter', sans-serif;
@@ -159,5 +196,110 @@
     margin-left: 20px;
     font-family: 'Jua', sans-serif;
   }
+
+
+
+
+
+
+  .footer {
+    /* position: relative; */
+    background-color: #FFD7CB;
+    height: 150px;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+
+    padding: 30px;
+    padding-left: 64px;
+    padding-right: 64px;
+
+    display: flex;
+    justify-content: space-between;
+
+    filter: drop-shadow(0px -10px 10px rgba(0, 0, 0, 0.3));
+}
+
+.footer .sideName {
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+
+    font-weight: 700;
+    color: #D06325;
+
+  }
+
+  .footer .category-wrapper {
+    display: inline-block;
+
+    font-family: 'Jua', sans-serif;
+
+    margin-left: 250px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+
+    font-size: x-large;
+    }
+
+.category-wrapper .category-separator {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #D06325;
+}
+.category-wrapper a {
+    color: black;
+}
+
+
+.creditCard-container {
+    /* margin-top: 15px; */
+}
+
+.creditCard-container img {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+.rightSide {
+    align-self: center;
+}
+
+.rightSide p {
+    align-self: center;
+    font-weight: 400;
+    font-size: large;
+
+    margin-bottom: 10px;
+}
+
+.registernbtn {
+    color: #D06325;
+    font-size: large;
+
+    width: 140px;
+    height: 43px;
+
+    
+    background: #FFFFFF;
+    border: 1px solid #D06325;
+    border-radius: 10px;
+
+    margin-right: 20px;
+
+} 
+
+.loginbtn {
+    font-size: large;
+    color: white;
+
+    width: 140px;
+    height: 43px;
+
+    background: #D06325;
+    border-radius: 10px;
+}
 
 </style>

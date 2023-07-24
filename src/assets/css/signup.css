@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+.signup {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    
+    
+}
+
+.signup .img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.signup .signup-container {
+    width: 38%;
+    display: flex;
+    height: auto;
+    padding: 54px 90px 42px 90px;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 16px;
+    background: rgba(255, 207, 193, 0.25);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(32px);
+    margin-left: 80px;
+}
+
+.signup .signup-container .logo-name  {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.signup .signup-container .logo-name .name {
+    color: #D06325;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.signup .signup-container .title-signup  {
+    text-align: center;
+    font-family: Jua;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 100;
+    margin-top: 50px;
+}
+
+.signup .signup-container .input-container {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+.signup .signup-container .input-container .input {
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    border-radius: 58px;
+    border: 2px solid #dbdada;
+    background: #FFF;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: Inter;
+}
+
+.signup .signup-container .input-container .inputPhoneNumber{
+    width: 100%;
+    height: 45px;
+    
+}
+.signup .signup-container .input-container .inputPhoneNumber .country{
+    width: 30%;
+    height: 45px;
+    background-color: white;
+    border-radius: 58px;
+    border: 2px solid #dbdada;
+    background: #FFF;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: Inter;
+    padding-left: 25px;
+}
+.signup .signup-container .input-container .inputPhoneNumber .number{
+    width: 70%;
+    height: 45px;
+    background-color: white;
+    border-radius: 58px;
+    border: 2px solid #dbdada;
+    background: #FFF;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: Inter;
+}
+
+
+
+
+
+.signup .signup-btn {
+    margin-top: 40px;
+    width: 100%;
+    height: 45px;
+    font-size: 28px;
+    font-family: Jua;
+    color: white;
+
+    /* display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0; */
+    border-radius: 58px;
+    background: var(--primary, #D06325);
+
+}
+
+.signup .forSignUp-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 60px;
+}
+.signup .forSignUp-container .checkbox{
+    width: 30px;
+    height: 30px;
+    stroke-width: 2px;
+    stroke: #319EC9;
+}
+.signup .forSignUp-container .question{
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+.signup .forSignUp-container .signup{
+    color: #319EC9;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+
+
+

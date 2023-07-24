@@ -2,7 +2,8 @@
 
 .customerService {
     width: 100%;
-    height: 500px;
+    height: max-content;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -191,6 +192,18 @@
     font-size: 22px;
     color: #959292;
 
+}
+
+.Leftside .selectcountry-container .zip{
+    width: 33.3%;
+    height: 45px;
+    flex-shrink: 0;
+    border: 2px solid #959292;
+    background: #FFF;
+    font-size: 22px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 10px;
 }
 
 /* Button */

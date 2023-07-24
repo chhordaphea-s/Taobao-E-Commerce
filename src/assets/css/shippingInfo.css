@@ -2,13 +2,13 @@
 
 .shippingInfo {
     width: 100%;
-    height: 500px;
+    height: max-content;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     align-items:  flex-start;
 
-    margin-top: 0;
+    margin-bottom: 100px;
 
 }
 .Leftside {
@@ -90,7 +90,7 @@
 
 /* Payment */
 
-.leftside .payment {
+.Leftside .payment {
     color: #D06325;
     font-family: Jua;
     font-size: 35px;
@@ -99,29 +99,35 @@
 
     margin-top: 40px;
     margin-left: 40px;
+    margin-bottom: 30px;
 }
 
-.leftside .method-container {
-    margin-top: 40px;
-    margin-left: 40px;
-}
-.leftside .method-container .method-price {
+.Leftside .method-container {
+    margin-top: 20px;
+    margin-left: 100px;
     display: flex;
     justify-content: space-between;
+    gap: 80px;
+    padding-right: 80px;
+}
+.Leftside .method-container .radio {
+    width: 32px;
+    height: 32px;
+    background-color: #319EC9;
+}
+.Leftside .method-container .method-price {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.Leftside .method-container .method{
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
 
-}
-.leftside .method-container .method-price .method{
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-}
-/* .leftside .method-container .method-price .price{
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-} */
+
 
 
 /* Return or Continue  */

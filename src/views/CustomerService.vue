@@ -49,7 +49,8 @@
                     <option value="S">Cambodia</option>
                     <option value="M">Vietname</option>
                 </select>
-                <input class="country" type="text" placeholder="Zip">
+                <input class="zip" type="text" placeholder="Zip">
+                      
 
             </div>
 

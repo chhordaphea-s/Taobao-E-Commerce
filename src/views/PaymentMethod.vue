@@ -36,16 +36,35 @@
                 </div>
             </div>
 
-            <input class="cardname" type="number" placeholder="Name on Card">
+            <input class="cardname" type="text" placeholder="Name on Card">
             <div class="cardinfo">
                 <input class="cardnum" type="text" placeholder="Card Number">
-                <input class="cardnum" type="text" placeholder="MM/YY">
-                <input class="cardnum" type="text" placeholder="CVV">
+                <input class="cardnum" type="date" placeholder="MM/YY">
+                <input class="cardnum" type="password" placeholder="CVV">
             </div>
 
             <p class="title-billing">Billing Address</p>
-            <div>
 
+            <div class="method-selection">
+                <div class="method-price">
+                    <input class="radio" type="radio">
+                    <p class="method">Same as shipping address</p>
+                </div>
+            </div>
+            <div class="method-selection">
+                <div class="method-price">
+                    <input class="radio" type="radio">
+                    <p class="method">Use a different billing address</p>
+                </div>
+            </div>
+
+            <p class="title-remember">Remember Me</p>
+
+            <div class="method-selection">
+                <div class="method-price">
+                    <input class="checkbox" type="checkbox">
+                    <p class="method">Save my information for a faster checkout</p>
+                </div>
             </div>
 
 
@@ -56,7 +75,7 @@
                 	</svg>
                     <a class="return"> Return to cart</a> 
                 </div>
-                <p class="continue">Continue to Shipping Method</p>
+                <p class="continue">Complete Order</p>
             </div>
 
         </div>

@@ -22,9 +22,31 @@
             <p class="payment">Payment Method</p>
             <div class="method-container">
                 <div class="method-price">
+                    <input class="radio" type="radio">
                     <p class="method">UPS Ground</p>
-                    <p class="method">2.20$</p>
                 </div>
+                <p class="method">2.20$</p>
+            </div>
+            <div class="method-container">
+                <div class="method-price">
+                    <input class="radio" type="radio">
+                    <p class="method">UPS 3 Day Select</p>
+                </div>
+                <p class="method">5.50$</p>
+            </div>
+            <div class="method-container">
+                <div class="method-price">
+                    <input class="radio" type="radio">
+                    <p class="method">UPS 2nd Day Air</p>
+                </div>
+                <p class="method">8.50$</p>
+            </div>
+            <div class="method-container">
+                <div class="method-price">
+                    <input class="radio" type="radio">
+                    <p class="method">UPS Next Day Air</p>
+                </div>
+                <p class="method">12.50$</p>
             </div>
 
             <div class="buttonReturnContinue-container">

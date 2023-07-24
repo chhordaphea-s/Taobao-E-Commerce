@@ -2,13 +2,13 @@
 
 .paymentMethod {
     width: 100%;
-    height: 500px;
+    height: max-content;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     align-items:  flex-start;
 
-    margin-top: 0;
+    margin-bottom: 100px;
 
 }
 .Leftside {
@@ -93,7 +93,7 @@
 
 .Leftside .title-payment-container {
     margin-left: 40px;
-    margin-top: 40px;
+    margin-top: 60px;
     display: flex;
     justify-content: space-between;
 }
@@ -137,18 +137,69 @@
     border: 2px solid #959292;
     background: #FFF;
     font-size: 22px;
+    color: #959292;
     border-radius: 10px;
     margin-top: 20px;
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Billing Address  */
 
-.Leftside .billing {
+.Leftside .title-billing {
+    color: #D06325;
+    font-family: Jua;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
     margin-left: 40px;
-    margin-top: 40px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.Leftside .method-selection {
+    /* margin-top: 30px; */
+    margin-left: 40px;
+    width: 95%;
+    height: 55px;
+    border: 2px solid #909090;
+    background: #FFF;
+    padding: 10px;
+    padding-left: 30px;
+}
+.Leftside  .method-selection .method-price{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.Leftside  .method-selection .method-price .radio {
+    width: 32px;
+    height: 32px;
+    background-color: #319EC9;
+}
+.Leftside  .method-selection .method-price .method{
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Remember */
+
+.Leftside .title-remember {
+    font-family: Jua;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    margin-left: 40px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.Leftside .method-selection .checkbox {
+    width: 30px;
+    height: 30px;
+    stroke-width: 2px;
+    stroke: #319EC9;
 }
 
 
