@@ -75,14 +75,6 @@
                 </div>
     
                 <hr class="line">
-
-                <!-- <div class="discount-container">
-                    <p class="discount-title">Gift card or discount code</p>
-                    <div class="action-on-code">
-                        <input class="input-code" type="text">
-                        <button class="btn-apply">Apply</button>
-                    </div>
-                </div> -->
     
                 <div class="total-container">
                     <p class="total">Total </p>

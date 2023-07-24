@@ -57,7 +57,21 @@ const router = createRouter({
       name: "signup",
       component: () => import("../views/SignUp.vue"),
     },
-
+    {
+      path: "/addtocart",
+      name: "addtocart",
+      component: () => import("../views/PopAddToCart.vue"),
+    },
+    {
+      path: "/emailconfirm",
+      name: "emailconfirm",
+      component: () => import("../views/EmailConfirm.vue"),
+    },
+    {
+      path: "/signup",
+      name: "signup",
+      component: () => import("../views/SignUp.vue"),
+    },
 
 
 

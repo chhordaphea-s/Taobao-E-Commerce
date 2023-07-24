@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+
+.emailconfirm {
+    width: 100%;
+    height: auto;
+}
+
+.emailconfirm .emaildate-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.emailconfirm .email-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    margin-left: 50px;
+}
+.emailconfirm .email-container .email{
+    color: #000;
+    font-family: Jua;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    display: block;
+}
+
+.emailconfirm .date-container {
+    display: flex;
+    justify-content: right;
+    gap: 13px;
+    padding-top: 55px;
+    padding-right: 50px;
+}
+.emailconfirm .date-container .date {
+    display: flex;
+    justify-content: right;
+    color: #000;
+    font-family: Jua;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+.emailconfirm .date-container .share{
+    margin-top: -20px;
+}
+
+/* Summary  */
+
+.emailconfirm .summary-container {
+    width: 100%;
+    height: auto;
+    padding: 50px 300px 50px 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.emailconfirm .summary-container .brand{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: -30px;
+}
+.emailconfirm .summary-container .brand .logoname{
+    color: #D06325;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+}
+.emailconfirm .summary-container .thankyou {
+    font-family: Jua;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 40px;
+}
+.emailconfirm .summary-container .alert-text{
+    color: #000;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 10px
+}
+.emailconfirm .summary-container .viewCart{
+    
+    background-color: #D06325;
+    margin-top: 60px;
+    width: 350px;
+    height: 50px;
+    color: white;
+    font-size: 28px;
+    font-family: Jua;
+    font-weight: 300px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+.emailconfirm .summary-container .review-and-link {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+.emailconfirm .summary-container .linktoStore{
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 70px;
+}
+
+.emailconfirm .summary-container .linktoStore .link {
+    color: #0044C9;
+    text-decoration-line: underline;
+}
+
+.emailconfirm .summary-container .main-title {
+    color: #D06325;
+    font-family: Jua;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 80px;
+}
+
+/* Product */
+.emailconfirm .summary-container .product {
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+    border-radius: 20px;
+    background: #FFD7CB;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+    margin-top: 30px;
+}
+.emailconfirm .summary-container .prd-img {
+    width: 130px;
+    /* margin-left: 40px; */
+    /* margin-top: 20px; */
+    border-radius: 15px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.25);
+
+}
+.emailconfirm .summary-container .prd-titleandsize {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.emailconfirm .summary-container .prd-title {
+    display: block;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+
+    width: 300px;
+}
+.emailconfirm .summary-container .prd-size {
+    display: block;
+
+    width: 100%;
+}
+.emailconfirm .summary-container .prd-size .size {
+    display: inline-block;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+
+    
+}
+
+.emailconfirm .summary-container .price {
+    display: inline-block;
+    font-family: Jua;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    width: 200px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 345px;
+}
+
+
+.emailconfirm .summary-container .total-summary-container {
+    border-radius: 20px;
+    background: #FFD7CB;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+    margin-top: 20px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+
+.emailconfirm .summary-container .total-summary-container .summary-subtotal-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+.emailconfirm .summary-container .total-summary-container .summary-subtotal-container .sum-sub{
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    display: inline;
+    
+}
+.emailconfirm .summary-container .total-summary-container .line{
+    width: 80%;
+    height: 0px;
+    border-color: #000;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.emailconfirm .summary-container .total-summary-container .total-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+.emailconfirm .summary-container .total-summary-container .total-container .total {
+    font-family: Jua;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    display: inline;
+}
+
+/* Customer Info  */
+
+.emailconfirm .summary-container .allInfo-container {
+    display: flex;
+    align-content: flex-start;
+    width: 100%;
+}
+.emailconfirm .summary-container .info-container {
+    /* margin-left: 50px; */
+    margin-top: -10px;
+    width: 50%;
+    /* background-color: #3672DC; */
+}
+.emailconfirm .summary-container .info-container .header{
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+
+    margin-top: 30px;
+}
+.emailconfirm .summary-container .info-container .subhead{
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.emailconfirm .summary-container .info-container .address{
+    color: #3672DC;
+    font-family: Jua;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration-line: underline;
+    width: 80%;
+    margin-top: 5px;
+}
+
+.emailconfirm .summary-container {
+    
+}
+.emailconfirm .summary-container {
+    
+}
+.emailconfirm .summary-container {
+    
+}
+
+
+
+
+
