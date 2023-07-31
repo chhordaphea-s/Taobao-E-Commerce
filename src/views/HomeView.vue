@@ -179,8 +179,8 @@
                 <p id="product-price">$ 5.5</p>
           </div>
         </div>
-      </div>      
-    </div>
+    </div>      
+  </div>
 
 
 

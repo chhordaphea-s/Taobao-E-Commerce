@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+ 
+.popup-container {
+    display: flex;
+    /* position: relative; */
+    margin-top: 30px;
+
+}
+
+.popaddtocart {
+    width: 28%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 40px;
+    margin-bottom: 300px;
+    margin-left: 1030px;
+    border-radius: 30px;
+    border-color: black;
+    border-width: 2px;
+    padding: 10px;
+    filter: drop-shadow(8px 8px 20px rgba(0, 0, 0, 0.70));
+
+    /* position: absolute; */
+}
+
+ .triangle-container {
+    position: relative;
+    height: 55px;
+    width: 80px;
+    /* filter: drop-shadow(8px 8px 20px rgba(0, 0, 0, 0.70)); */
+    margin-left: -150px;
+    margin-bottom: 150px;
+    margin-top: -9px;
+    /* z-index: -1; */
+}
+
+ .triangle-container .triangle{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    width: 80px;
+    
+}
+.triangle-container .small-triangle {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    clip-path: polygon(50% 5%,0% 96%, 100% 96%);
+}
+
+.popup-container .popaddtocart .cart-info {
+    width: 100%;
+    height: auto;
+   padding-left: 20px;
+   padding-top: 10px;
+   padding-right: 20px;
+   padding-bottom: 30px;
+}
+.popup-container .popaddtocart .cart-info .title{
+    font-family: Jua;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.popup-container .popaddtocart .cart-info .line{
+    border-color: #D06325;
+    border-width: 1px;
+
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.popup-container .popaddtocart .cart-info .allItem {
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.popup-container .popaddtocart .cart-info  .info {
+}
+
+.popup-container .popaddtocart .cart-info .info .item-name{
+    /* display: flex;
+    justify-content: flex-start; */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    /* margin-top: 8px; */
+}
+.popup-container .popaddtocart .cart-info .btn-container{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 40px;
+}
+
+
+.popup-container .popaddtocart .cart-info button {
+    width: 50%;
+    height: 38px;
+    border-radius: 10px;
+    
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.popup-container .popaddtocart .cart-info .viewcart {
+    border: 1px solid #D06325;
+    background: #FFF;
+    color: #D06325;
+}
+.popup-container .popaddtocart .cart-info .checkoutButton {
+    background:#D06325;
+    color: white;
+}
+
+
+

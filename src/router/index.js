@@ -68,9 +68,14 @@ const router = createRouter({
       component: () => import("../views/EmailConfirm.vue"),
     },
     {
-      path: "/signup",
-      name: "signup",
-      component: () => import("../views/SignUp.vue"),
+      path: "/search",
+      name: "search",
+      component: () => import("../views/Search.vue"),
+    },
+    {
+      path: "/userprofile",
+      name: "userprofile",
+      component: () => import("../views/UserProfile.vue"),
     },
 
 
