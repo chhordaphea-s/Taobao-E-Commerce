@@ -1,90 +1,173 @@
+<script>
+import popAddToCart from "./Component/popupAddToCart/PopAddToCart.vue"
+
+export default {
+  data() {
+    return {
+      apiURL: "http://localhost:30002",
+      isDisplayCartPopUp: false,
+      product: {},
+      moreProducts: [],
+      selectedImage: "",
+      quantity: 1,
+    }
+  },
+  components: {
+    popAddToCart,
+  },
+  methods: {
+    async addToCartFunction(qunt, size) {
+
+      if (size == undefined) {
+        alert("Size can't be empty")
+        return
+      }
+
+      const product = {
+        product: this.product,
+        quantity: qunt,
+        size: size
+      }
+
+      console.log("product: ", product)
+
+      fetch(`${this.apiURL}/cart/addtocart`, {
+        method: "POST",
+        credentials: "include",
+        origin: "http://localhost:5173/",
+        headers: {
+                    "Content-Type": "application/json",
+                },
+        body: JSON.stringify(product)
+      }).then( async (response) => {
+        const result = await response.json()
+
+        console.log("Server Reponse: ", result);
+
+        if (!result.success) {
+          if (result.error == "You must sign In") this.$router.push({ name: "login"})
+        } else {
+          this.isDisplayCartPopUp = true
+        }
+      })
+    }
+
+  },
+  mounted() {
+    const id = this.$route.params.id
+    console.log("id: ", id);
+
+    fetch(`${this.apiURL}/product/${id}`).then(async (response) => {
+      const result = await response.json()
+
+      console.log("Server Response: ", result)
+
+      if (!result.success) {
+        alert(`Invalid: ${result.message}`)
+        return
+      }
+
+      this.product = result.data
+      this.selectedImage = `${this.apiURL}/${this.product.images[0]}`
+    })
+
+
+    fetch(`${this.apiURL}/product`).then(async (response) => {
+      const result = await response.json()
+
+      console.log("Server Response: ", result)
+
+      if (!result.success) {
+        alert(`Invalid: ${result.message}`)
+        return
+      }
+
+      this.moreProducts = result.data
+    })
+  }
+}
+</script>
+
+
 <template>
+  <popAddToCart class="cartPopUp" v-if="this.isDisplayCartPopUp"></popAddToCart>
+
   <div class="product">
 
     <div class="routes-to-product">
-        <a class="router"> Home </a> > 
-        <a class="router"> Product </a> >
-        <a class="product-name">Skirt</a>
+      <a class="router"> Home </a> >
+      <a class="router"> Product </a> >
+      <a class="product-name">Skirt</a>
     </div>
 
     <div class="productWithDetailInfo">
       <div class="LeftRightInfoContainer">
         <div class="left-side">
-        <div class="mainPicture">
-            <img src="./../assets/images/productDetail/main-picture.png" alt="">
-        </div>
-        <div class="availablePictureContainer">
+          <div class="mainPicture">
+            <img :src="selectedImage" alt="">
+          </div>
+          <div class="availablePictureContainer">
 
-            <img src="./../assets/images/productDetail/main-picture.png" alt="">
-            <img src="./../assets/images/productDetail/main-picture.png" alt="">
-            <img src="./../assets/images/productDetail/main-picture.png" alt="">
-        </div>
+            <img v-for="image in product.images" :src="apiURL + '/' + image"
+              @click="this.selectedImage = apiURL + '/' + image" alt="">
+
+          </div>
 
         </div>
 
         <div class="right-side">
           <div class="name-and-price">
             <div class="nameProduct">
-              Christian Dior 2018-19FW Flared Skirts Street Style Other Animal Patterns Cotton Long
+              {{ product.title }}
             </div>
-            <div class="price"> 52$</div>
+            <div class="price">$ {{ product.price }}</div>
           </div>
 
           <div class="category">
-              | Print Skirt Street Style
+            | {{ product.category }}
           </div>
 
-          <div class="size-and-chart">
-              <a class="size"> Size </a>
-              <a class="chart"> Sizing Chart </a>
+          <div class="description-container">
+            <p class="description">
+              {{ product.description }}
+            </p>
           </div>
 
-          <div class="btn-container">
-              <button> 
-                <img src="./../assets/images/svg/women.svg" alt="">
-                Women 
-              </button>
 
-              <button> 
-                <img src="./../assets/images/svg/men.svg" alt="">
-                Men
-              </button>
-          </div>
+          <form >
+            <div class="size-and-quantity">
 
-          <div class="choose-size">
-            <select class="select" name="choose size" id="" >
-              <option value="" disabled selected>Choose Size</option>
-              <option value="S">Size S</option>
-              <option value="M">Size M</option>
-              <option value="L">Size L</option>
-            </select>
-          </div>
+              <div class="size-container">
+                <p class="size"> Size </p>
+                <select class="size-selection" name="choose size" id="" v-model="selectedSize" required>
+                  <option value="" disabled selected>Choose Size</option>
+                  <option :value="s" v-for="s in product.size">Size {{ s }}</option>
 
-          <div class="quantity-and-num">
-              <p class="quantity">Quantity</p>
-              <input class="numberQuantity" value="1" type="number" name="" id="">
-          </div>
+                </select>
+              </div>
 
-          <div class="purchase-addCart">
-            <button class="purchase">
-              <img src="./../assets/images/svg/CreditCard.svg" alt="">
+              <div class="quantity-container">
+                <p class="quantity">Quantity</p>
+                <input class="numberQuantity" v-model="quantity" type="number" name="quantity" id="quantity" required>
+              </div>
+            </div>
+
+            <div class="purchase-addCart">
+              <button class="purchase" type="submit">
+                <img src="./../assets/images/svg/CreditCard.svg" alt="">
                 Buy Now
-            </button>
+              </button>
 
-            <button >
-              <img src="./../assets/images/svg/cart.svg" alt="">
+              <button type="submit" @click.prevent="addToCartFunction(quantity, selectedSize)">
+                <img src="./../assets/images/svg/cart.svg" alt="">
                 Add to cart
-            </button>
-          </div>
-          
-
+              </button>
+            </div>
+          </form>
         </div>
-
       </div>
 
-      <div class="description-container">
-        <p class="description"> This is a Christian Dior 2018-19FW Flared Skirts Street Style Other Animal Patterns Cotton Long of Christian Dior.This is a Christian Dior 2018-19FW Flared Skirts Street Style Other Animal Patterns Cotton Long of Christian Dior.</p>
-      </div>
+
 
       <div class="related-product">
         <div class="relatedproduct-title">
@@ -94,88 +177,20 @@
 
       <div class="product-display-container">
 
-        <div class="product-cell">
+
+        <a class="product-cell" v-for="productm in moreProducts" :href="'/products/' + productm._id">
           <div class="productImage">
-            <img src="./../assets/images/home_products/product1icon.svg" alt="">
+            <img :src="'http://localhost:30002/' + productm.images[0]" alt="">
           </div>
 
           <div class="product-info">
-              <p id="product-name">ins air cushion comb women's black massage</p>
-                <p id="product-price">$ 1.7</p>
+            <p id="product-name">{{ productm.title }}</p>
+            <p id="product-price">{{ productm.price }}$</p>
           </div>
-        </div>
-        <div class="product-cell">
-          <div class="productImage">
-            <img src="./../assets/images/home_products/product2icon.svg" alt="">
-          </div>
+        </a>
 
-          <div class="product-info">
-              <p id="product-name">The counter shopping mall withdraws the international</p>
-                <p id="product-price">$ 11.5</p>
-          </div>
-        </div>
-        <div class="product-cell">
-          <div class="productImage">
-            <img src="./../assets/images/home_products/product3icon.svg" alt="">
-          </div>
+      </div>
 
-          <div class="product-info">
-              <p id="product-name">Brown smudged ink painting is suitable for Apple</p>
-                <p id="product-price">$ 1.5</p>
-          </div>
-        </div>
-        <div class="product-cell">
-          <div class="productImage">
-            <img src="./../assets/images/home_products/product4icon.svg" alt="">
-          </div>
-
-          <div class="product-info">
-              <p id="product-name">ins air cushion comb women's black massage</p>
-                <p id="product-price">$ 5.5</p>
-          </div>
-        </div>
-
-        <div class="product-cell">
-          <div class="productImage">
-            <img src="./../assets/images/home_products/product1icon.svg" alt="">
-          </div>
-
-          <div class="product-info">
-              <p id="product-name">ins air cushion comb women's black massage</p>
-                <p id="product-price">$ 1.7</p>
-          </div>
-        </div>
-        <div class="product-cell">
-          <div class="productImage">
-            <img src="./../assets/images/home_products/product2icon.svg" alt="">
-          </div>
-
-          <div class="product-info">
-              <p id="product-name">The counter shopping mall withdraws the international</p>
-                <p id="product-price">$ 11.5</p>
-          </div>
-        </div>
-        <div class="product-cell">
-          <div class="productImage">
-            <img src="./../assets/images/home_products/product3icon.svg" alt="">
-          </div>
-
-          <div class="product-info">
-              <p id="product-name">Brown smudged ink painting is suitable for Apple</p>
-                <p id="product-price">$ 1.5</p>
-          </div>
-        </div>
-        <div class="product-cell">
-          <div class="productImage">
-            <img src="./../assets/images/home_products/product4icon.svg" alt="">
-          </div>
-
-          <div class="product-info">
-              <p id="product-name">ins air cushion comb women's black massage</p>
-                <p id="product-price">$ 5.5</p>
-          </div>
-        </div>
-      </div>  
 
     </div>
 

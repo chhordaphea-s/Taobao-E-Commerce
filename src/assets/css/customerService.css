@@ -225,6 +225,7 @@
     justify-content: flex-start;
     gap: 10px;
     padding: 10px;
+    align-items: center;
 }
 .Leftside .buttonReturnContinue-container .to-return .return {
     font-family: Jua;

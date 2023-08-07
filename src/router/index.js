@@ -12,38 +12,35 @@ const router = createRouter({
     {
       path: "/about",
       name: "about",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/AboutView.vue"),
     },
     {
-      path: "/product",
-      name: "product",
+      path: "/products/:id",
+      name: "products",
       component: () => import("../views/Products.vue"),
     },
     {
-      path: "/cart",
+      path: "/cart/",
       name: "cart",
       component: () => import("../views/Cart.vue"),
     },
     {
-      path: "/customerservice",
+      path: "/customerservice/:id",
       name: "customerservice",
       component: () => import("../views/CustomerService.vue"),
     },
     {
-      path: "/shippinginfo",
+      path: "/shippinginfo/:id",
       name: "shippinginfo",
       component: () => import("../views/ShippingInfo.vue"),
     },
     {
-      path: "/paymentmethod",
+      path: "/paymentmethod/:id",
       name: "paymentmethod",
       component: () => import("../views/PaymentMethod.vue"),
     },
     {
-      path: "/success",
+      path: "/success/:id",
       name: "success",
       component: () => import("../views/Success.vue"),
     },
@@ -56,11 +53,6 @@ const router = createRouter({
       path: "/signup",
       name: "signup",
       component: () => import("../views/SignUp.vue"),
-    },
-    {
-      path: "/addtocart",
-      name: "addtocart",
-      component: () => import("../views/PopAddToCart.vue"),
     },
     {
       path: "/emailconfirm",
@@ -87,6 +79,12 @@ const router = createRouter({
       name: "userprofile",
       component: () => import("../views/UserProfile.vue"),
     },
+    {
+      path: "/landingpage",
+      name: "landingpage",
+      component: () => import("../views/LandingPageView.vue"),
+    },
+    
 
 
 
